@@ -29,7 +29,6 @@ async def http_handler(path, headers):
             body = bytes(f.read(), 'utf-8')
 
             return HTTPStatus.OK, headers, body
-        
     else:
         return None
 
